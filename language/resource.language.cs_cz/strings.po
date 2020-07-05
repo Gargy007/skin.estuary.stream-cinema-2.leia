@@ -1139,3 +1139,55 @@ msgstr "Slovenština"
 msgctxt "#31415"
 msgid "English"
 msgstr "Angličtina"
+
+msgctxt "#31416"
+msgid "Widget Trakt"
+msgstr "Widget Trakt"
+
+msgctxt "#31417"
+msgid "Trakt"
+msgstr "Trakt"
+
+msgctxt "#31418"
+msgid "Widget Download"
+msgstr "Widget Stahované"
+
+msgctxt "#31419"
+msgid "Download"
+msgstr "Stahované"
+
+msgctxt "#31420"
+msgid "Watch List"
+msgstr "Co chci vidět"
+
+msgctxt "#31421"
+msgid "Rated movies"
+msgstr "Hodnocené filmy"
+
+msgctxt "#31422"
+msgid "Rated shows"
+msgstr "Hodnocené seriály"
+
+msgctxt "#31423"
+msgid "Watched movies"
+msgstr "Sledované filmy"
+
+msgctxt "#31424"
+msgid "Watched shows"
+msgstr "Sledované seriály"
+
+msgctxt "#31425"
+msgid "Friends and following"
+msgstr "Přátelé a sledující"
+
+msgctxt "#31426"
+msgid "Liked list"
+msgstr "Oblíbený seznam"
+
+msgctxt "#31427"
+msgid "Popular list"
+msgstr "Populární seznam"
+
+msgctxt "#31428"
+msgid "Trending list"
+msgstr "Seznam trendů"

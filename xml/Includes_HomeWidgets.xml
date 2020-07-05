@@ -1327,6 +1327,277 @@
 			</control>
 			<include>WidgetTitle</include>
 		</control>
+		<control type="group" id="42200"> <!-- Easy/SC+ SC Trakt -->
+			<include>ShiftWidgets</include>
+			<include content="WidgetInfo" condition="Skin.HasSetting(show_info) + !Skin.HasSetting(show_fullwidget)"><param name="list_id" value="42010"/><param name="year" value="false"/></include> <!-- Easy/SC+ -->
+			<include content="WidgetInfo" condition="Skin.HasSetting(show_info) + !Skin.HasSetting(show_fullwidget)"><param name="list_id" value="42002"/><param name="year" value="false"/></include> <!-- Easy/SC+ -->
+			<include content="WidgetInfo" condition="Skin.HasSetting(show_info) + !Skin.HasSetting(show_fullwidget)"><param name="list_id" value="42003"/><param name="year" value="false"/></include> <!-- Easy/SC+ -->
+			<include content="WidgetInfo" condition="Skin.HasSetting(show_info) + !Skin.HasSetting(show_fullwidget)"><param name="list_id" value="42004"/><param name="year" value="false"/></include> <!-- Easy/SC+ -->
+			<include content="WidgetInfo" condition="Skin.HasSetting(show_info) + !Skin.HasSetting(show_fullwidget)"><param name="list_id" value="42005"/><param name="year" value="false"/></include> <!-- Easy/SC+ -->
+			<include content="WidgetInfo" condition="Skin.HasSetting(show_info) + !Skin.HasSetting(show_fullwidget)"><param name="list_id" value="42006"/><param name="year" value="false"/></include> <!-- Easy/SC+ -->
+			<include content="WidgetInfo" condition="Skin.HasSetting(show_info) + !Skin.HasSetting(show_fullwidget)"><param name="list_id" value="42007"/><param name="year" value="false"/></include> <!-- Easy/SC+ -->
+			<include content="WidgetInfo" condition="Skin.HasSetting(show_info) + !Skin.HasSetting(show_fullwidget)"><param name="list_id" value="42008"/><param name="year" value="false"/></include> <!-- Easy/SC+ -->
+			<visible>String.IsEqual(Container(9000).ListItem.Property(id),streamcinematrakt)</visible>
+			<include content="Visible_Right_Delayed">
+				<param name="id" value="streamcinematrakt"/>
+			</include>
+			<control type="grouplist" id="42001">
+				<include>WidgetGroupListCommon</include>
+				<include content="WidgetListPoster" condition="Skin.HasSetting(SCTraktWatchlistWidgetList) + !Skin.HasSetting(HomeMenuNoStreamCinemaButton) + System.HasAddon(plugin.video.stream-cinema-2-release)">
+					<param name="content_path" value="plugin://plugin.video.stream-cinema-2-release/trakt/list?id=watchlist&amp;user=me"/>
+					<param name="widget_header" value=$LOCALIZE[31420]/>
+					<param name="widget_target" value="videos"/>
+					<param name="list_id" value="42010"/>
+					<param name="stream-cinema" value="true"/> <!-- Easy/SC+ -->
+				</include>
+				<include content="WidgetWallPoster" condition="Skin.HasSetting(SCTraktWatchlistWidgetWall) + !Skin.HasSetting(HomeMenuNoStreamCinemaButton) + System.HasAddon(plugin.video.stream-cinema-2-release)">
+					<param name="content_path" value="plugin://plugin.video.stream-cinema-2-release/trakt/list?id=watchlist&amp;user=me"/>
+					<param name="widget_header" value=$LOCALIZE[31420]/>
+					<param name="widget_target" value="videos"/>
+					<param name="list_id" value="42010"/>
+					<param name="stream-cinema" value="true"/> <!-- Easy/SC+ -->
+				</include>
+				<include content="WidgetListEpisodes" condition="Skin.HasSetting(SCTraktWatchlistWidgetListEpisodes) + !Skin.HasSetting(HomeMenuNoStreamCinemaButton) + System.HasAddon(plugin.video.stream-cinema-2-release)">
+					<param name="content_path" value="plugin://plugin.video.stream-cinema-2-release/trakt/list?id=watchlist&amp;user=me"/>
+					<param name="widget_header" value=$LOCALIZE[31420]/>
+					<param name="widget_target" value="videos"/>
+					<param name="list_id" value="42010"/>
+					<param name="stream-cinema" value="true"/> <!-- Easy/SC+ -->
+				</include>
+				<include content="WidgetWallEpisodes" condition="Skin.HasSetting(SCTraktWatchlistWidgetWallEpisodes) + !Skin.HasSetting(HomeMenuNoStreamCinemaButton) + System.HasAddon(plugin.video.stream-cinema-2-release)">
+					<param name="content_path" value="plugin://plugin.video.stream-cinema-2-release/trakt/list?id=watchlist&amp;user=me"/>
+					<param name="widget_header" value=$LOCALIZE[31420]/>
+					<param name="widget_target" value="videos"/>
+					<param name="list_id" value="42010"/>
+					<param name="stream-cinema" value="true"/> <!-- Easy/SC+ -->
+				</include>
+				<include content="WidgetListPoster" condition="Skin.HasSetting(SCTraktRatedMovieslistWidgetList) + !Skin.HasSetting(HomeMenuNoStreamCinemaButton) + System.HasAddon(plugin.video.stream-cinema-2-release)">
+					<param name="content_path" value="plugin://plugin.video.stream-cinema-2-release/trakt/history?hist_type=rated&amp;media=movies&amp;user=me"/>
+					<param name="widget_header" value=$LOCALIZE[31421]/>
+					<param name="widget_target" value="videos"/>
+					<param name="list_id" value="42002"/>
+					<param name="stream-cinema" value="true"/> <!-- Easy/SC+ -->
+				</include>
+				<include content="WidgetWallPoster" condition="Skin.HasSetting(SCTraktRatedMovieslistWidgetWall) + !Skin.HasSetting(HomeMenuNoStreamCinemaButton) + System.HasAddon(plugin.video.stream-cinema-2-release)">
+					<param name="content_path" value="plugin://plugin.video.stream-cinema-2-release/trakt/history?hist_type=rated&amp;media=movies&amp;user=me"/>
+					<param name="widget_header" value=$LOCALIZE[31421]/>
+					<param name="widget_target" value="videos"/>
+					<param name="list_id" value="42002"/>
+					<param name="stream-cinema" value="true"/> <!-- Easy/SC+ -->
+				</include>
+				<include content="WidgetListEpisodes" condition="Skin.HasSetting(SCTraktRatedMoviesWidgetListEpisodes) + !Skin.HasSetting(HomeMenuNoStreamCinemaButton) + System.HasAddon(plugin.video.stream-cinema-2-release)">
+					<param name="content_path" value="plugin://plugin.video.stream-cinema-2-release/trakt/history?hist_type=rated&amp;media=movies&amp;user=me"/>
+					<param name="widget_header" value=$LOCALIZE[31421]/>
+					<param name="widget_target" value="videos"/>
+					<param name="list_id" value="42002"/>
+					<param name="stream-cinema" value="true"/> <!-- Easy/SC+ -->
+				</include>
+				<include content="WidgetWallEpisodes" condition="Skin.HasSetting(SCTraktRatedMoviesWidgetWallEpisodes) + !Skin.HasSetting(HomeMenuNoStreamCinemaButton) + System.HasAddon(plugin.video.stream-cinema-2-release)">
+					<param name="content_path" value="plugin://plugin.video.stream-cinema-2-release/trakt/history?hist_type=rated&amp;media=movies&amp;user=me"/>
+					<param name="widget_header" value=$LOCALIZE[31421]/>
+					<param name="widget_target" value="videos"/>
+					<param name="list_id" value="42002"/>
+					<param name="stream-cinema" value="true"/> <!-- Easy/SC+ -->
+				</include>
+				<include content="WidgetListPoster" condition="Skin.HasSetting(SCTraktRatedSeriesWidgetList) + !Skin.HasSetting(HomeMenuNoStreamCinemaButton) + System.HasAddon(plugin.video.stream-cinema-2-release)">
+					<param name="content_path" value="plugin://plugin.video.stream-cinema-2-release/trakt/history?hist_type=rated&amp;media=shows&amp;user=me"/>
+					<param name="widget_header" value=$LOCALIZE[31422]/>
+					<param name="widget_target" value="videos"/>
+					<param name="list_id" value="42003"/>
+					<param name="stream-cinema" value="true"/> <!-- Easy/SC+ -->
+				</include>
+				<include content="WidgetWallPoster" condition="Skin.HasSetting(SCTraktRatedSeriesWidgetWall) + !Skin.HasSetting(HomeMenuNoStreamCinemaButton) + System.HasAddon(plugin.video.stream-cinema-2-release)">
+					<param name="content_path" value="plugin://plugin.video.stream-cinema-2-release/trakt/history?hist_type=rated&amp;media=shows&amp;user=me"/>
+					<param name="widget_header" value=$LOCALIZE[31422]/>
+					<param name="widget_target" value="videos"/>
+					<param name="list_id" value="42003"/>
+					<param name="stream-cinema" value="true"/> <!-- Easy/SC+ -->
+				</include>
+				<include content="WidgetListEpisodes" condition="Skin.HasSetting(SCTraktRatedSeriesWidgetListEpisodes) + !Skin.HasSetting(HomeMenuNoStreamCinemaButton) + System.HasAddon(plugin.video.stream-cinema-2-release)">
+					<param name="content_path" value="plugin://plugin.video.stream-cinema-2-release/trakt/history?hist_type=rated&amp;media=shows&amp;user=me"/>
+					<param name="widget_header" value=$LOCALIZE[31422]/>
+					<param name="widget_target" value="videos"/>
+					<param name="list_id" value="42003"/>
+					<param name="stream-cinema" value="true"/> <!-- Easy/SC+ -->
+				</include>
+				<include content="WidgetWallEpisodes" condition="Skin.HasSetting(SCTraktRatedSeriesWidgetWallEpisodes) + !Skin.HasSetting(HomeMenuNoStreamCinemaButton) + System.HasAddon(plugin.video.stream-cinema-2-release)">
+					<param name="content_path" value="plugin://plugin.video.stream-cinema-2-release/trakt/history?hist_type=rated&amp;media=shows&amp;user=me"/>
+					<param name="widget_header" value=$LOCALIZE[31422]/>
+					<param name="widget_target" value="videos"/>
+					<param name="list_id" value="42003"/>
+					<param name="stream-cinema" value="true"/> <!-- Easy/SC+ -->
+				</include>
+				<include content="WidgetListPoster" condition="Skin.HasSetting(SCTraktWatchedMoviesWidgetList) + !Skin.HasSetting(HomeMenuNoStreamCinemaButton) + System.HasAddon(plugin.video.stream-cinema-2-release)">
+					<param name="content_path" value="plugin://plugin.video.stream-cinema-2-release/trakt/history?hist_type=watched&amp;media=movies&amp;user=me"/>
+					<param name="widget_header" value=$LOCALIZE[31423]/>
+					<param name="widget_target" value="videos"/>
+					<param name="list_id" value="42004"/>
+					<param name="stream-cinema" value="true"/> <!-- Easy/SC+ -->
+				</include>
+				<include content="WidgetWallPoster" condition="Skin.HasSetting(SCTraktWatchedMoviesWidgetWall) + !Skin.HasSetting(HomeMenuNoStreamCinemaButton) + System.HasAddon(plugin.video.stream-cinema-2-release)">
+					<param name="content_path" value="plugin://plugin.video.stream-cinema-2-release/trakt/history?hist_type=watched&amp;media=movies&amp;user=me"/>
+					<param name="widget_header" value=$LOCALIZE[31423]/>
+					<param name="widget_target" value="videos"/>
+					<param name="list_id" value="42004"/>
+					<param name="stream-cinema" value="true"/> <!-- Easy/SC+ -->
+				</include>
+				<include content="WidgetListEpisodes" condition="Skin.HasSetting(SCTraktWatchedMoviesListEpisodes) + !Skin.HasSetting(HomeMenuNoStreamCinemaButton) + System.HasAddon(plugin.video.stream-cinema-2-release)">
+					<param name="content_path" value="plugin://plugin.video.stream-cinema-2-release/trakt/history?hist_type=watched&amp;media=movies&amp;user=me"/>
+					<param name="widget_header" value=$LOCALIZE[31423]/>
+					<param name="widget_target" value="videos"/>
+					<param name="list_id" value="42004"/>
+					<param name="stream-cinema" value="true"/> <!-- Easy/SC+ -->
+				</include>
+				<include content="WidgetWallEpisodes" condition="Skin.HasSetting(SCTraktWatchedMoviesWallEpisodes) + !Skin.HasSetting(HomeMenuNoStreamCinemaButton) + System.HasAddon(plugin.video.stream-cinema-2-release)">
+					<param name="content_path" value="plugin://plugin.video.stream-cinema-2-release/trakt/history?hist_type=watched&amp;media=movies&amp;user=me"/>
+					<param name="widget_header" value=$LOCALIZE[31423]/>
+					<param name="widget_target" value="videos"/>
+					<param name="list_id" value="42004"/>
+					<param name="stream-cinema" value="true"/> <!-- Easy/SC+ -->
+				</include>
+				<include content="WidgetListPoster" condition="Skin.HasSetting(SCTraktWatchedSeriesWidgetList) + !Skin.HasSetting(HomeMenuNoStreamCinemaButton) + System.HasAddon(plugin.video.stream-cinema-2-release)">
+					<param name="content_path" value="plugin://plugin.video.stream-cinema-2-release/trakt/history?hist_type=watched&amp;media=shows&amp;user=me"/>
+					<param name="widget_header" value=$LOCALIZE[31424]/>
+					<param name="widget_target" value="videos"/>
+					<param name="list_id" value="42005"/>
+					<param name="stream-cinema" value="true"/> <!-- Easy/SC+ -->
+				</include>
+				<include content="WidgetWallPoster" condition="Skin.HasSetting(SCTraktWatchedSeriesWidgetWall) + !Skin.HasSetting(HomeMenuNoStreamCinemaButton) + System.HasAddon(plugin.video.stream-cinema-2-release)">
+					<param name="content_path" value="plugin://plugin.video.stream-cinema-2-release/trakt/history?hist_type=watched&amp;media=shows&amp;user=me"/>
+					<param name="widget_header" value=$LOCALIZE[31424]/>
+					<param name="widget_target" value="videos"/>
+					<param name="list_id" value="42005"/>
+					<param name="stream-cinema" value="true"/> <!-- Easy/SC+ -->
+				</include>
+				<include content="WidgetListEpisodes" condition="Skin.HasSetting(SCTraktWatchedSeriesWidgetListEpisodes) + !Skin.HasSetting(HomeMenuNoStreamCinemaButton) + System.HasAddon(plugin.video.stream-cinema-2-release)">
+					<param name="content_path" value="plugin://plugin.video.stream-cinema-2-release/trakt/history?hist_type=watched&amp;media=shows&amp;user=me"/>
+					<param name="widget_header" value=$LOCALIZE[31424]/>
+					<param name="widget_target" value="videos"/>
+					<param name="list_id" value="42005"/>
+					<param name="stream-cinema" value="true"/> <!-- Easy/SC+ -->
+				</include>
+				<include content="WidgetWallEpisodes" condition="Skin.HasSetting(SCTraktWatchedSeriesWidgetWallEpisodes) + !Skin.HasSetting(HomeMenuNoStreamCinemaButton) + System.HasAddon(plugin.video.stream-cinema-2-release)">
+					<param name="content_path" value="plugin://plugin.video.stream-cinema-2-release/trakt/history?hist_type=watched&amp;media=shows&amp;user=me"/>
+					<param name="widget_header" value=$LOCALIZE[31424]/>
+					<param name="widget_target" value="videos"/>
+					<param name="list_id" value="42005"/>
+					<param name="stream-cinema" value="true"/> <!-- Easy/SC+ -->
+				</include>
+				<include content="WidgetListPoster" condition="Skin.HasSetting(SCTraktFriendsWidgetList) + !Skin.HasSetting(HomeMenuNoStreamCinemaButton) + System.HasAddon(plugin.video.stream-cinema-2-release)">
+					<param name="content_path" value="plugin://plugin.video.stream-cinema-2-release/trakt/friends?user=me"/>
+					<param name="widget_header" value=$LOCALIZE[31425]/>
+					<param name="widget_target" value="videos"/>
+					<param name="list_id" value="42006"/>
+					<param name="stream-cinema" value="true"/> <!-- Easy/SC+ -->
+				</include>
+				<include content="WidgetWallPoster" condition="Skin.HasSetting(SCTraktFriendsWidgetWall) + !Skin.HasSetting(HomeMenuNoStreamCinemaButton) + System.HasAddon(plugin.video.stream-cinema-2-release)">
+					<param name="content_path" value="plugin://plugin.video.stream-cinema-2-release/trakt/friends?user=me"/>
+					<param name="widget_header" value=$LOCALIZE[31425]/>
+					<param name="widget_target" value="videos"/>
+					<param name="list_id" value="42006"/>
+					<param name="stream-cinema" value="true"/> <!-- Easy/SC+ -->
+				</include>
+				<include content="WidgetListEpisodes" condition="Skin.HasSetting(SCTraktFriendsWidgetListEpisodes) + !Skin.HasSetting(HomeMenuNoStreamCinemaButton) + System.HasAddon(plugin.video.stream-cinema-2-release)">
+					<param name="content_path" value="plugin://plugin.video.stream-cinema-2-release/trakt/friends?user=me"/>
+					<param name="widget_header" value=$LOCALIZE[31425]/>
+					<param name="widget_target" value="videos"/>
+					<param name="list_id" value="42006"/>
+					<param name="stream-cinema" value="true"/> <!-- Easy/SC+ -->
+				</include>
+				<include content="WidgetWallEpisodes" condition="Skin.HasSetting(SCTraktFriendsWidgetWallEpisodes) + !Skin.HasSetting(HomeMenuNoStreamCinemaButton) + System.HasAddon(plugin.video.stream-cinema-2-release)">
+					<param name="content_path" value="plugin://plugin.video.stream-cinema-2-release/trakt/friends?user=me"/>
+					<param name="widget_header" value=$LOCALIZE[31425]/>
+					<param name="widget_target" value="videos"/>
+					<param name="list_id" value="42006"/>
+					<param name="stream-cinema" value="true"/> <!-- Easy/SC+ -->
+				</include>
+				<include content="WidgetListPoster" condition="Skin.HasSetting(SCTraktLikedWidgetList) + !Skin.HasSetting(HomeMenuNoStreamCinemaButton) + System.HasAddon(plugin.video.stream-cinema-2-release)">
+					<param name="content_path" value="plugin://plugin.video.stream-cinema-2-release/trakt/special-list?list_type=likes"/>
+					<param name="widget_header" value=$LOCALIZE[31426]/>
+					<param name="widget_target" value="videos"/>
+					<param name="list_id" value="42007"/>
+					<param name="stream-cinema" value="true"/> <!-- Easy/SC+ -->
+				</include>
+				<include content="WidgetWallPoster" condition="Skin.HasSetting(SCTraktLikedWidgetWall) + !Skin.HasSetting(HomeMenuNoStreamCinemaButton) + System.HasAddon(plugin.video.stream-cinema-2-release)">
+					<param name="content_path" value="plugin://plugin.video.stream-cinema-2-release/trakt/special-list?list_type=likes"/>
+					<param name="widget_header" value=$LOCALIZE[31426]/>
+					<param name="widget_target" value="videos"/>
+					<param name="list_id" value="42007"/>
+					<param name="stream-cinema" value="true"/> <!-- Easy/SC+ -->
+				</include>
+				<include content="WidgetListEpisodes" condition="Skin.HasSetting(SCTraktLikedWidgetListEpisodes) + !Skin.HasSetting(HomeMenuNoStreamCinemaButton) + System.HasAddon(plugin.video.stream-cinema-2-release)">
+					<param name="content_path" value="plugin://plugin.video.stream-cinema-2-release/trakt/special-list?list_type=likes"/>
+					<param name="widget_header" value=$LOCALIZE[31426]/>
+					<param name="widget_target" value="videos"/>
+					<param name="list_id" value="42007"/>
+					<param name="stream-cinema" value="true"/> <!-- Easy/SC+ -->
+				</include>
+				<include content="WidgetWallEpisodes" condition="Skin.HasSetting(SCTraktLikedWidgetWallEpisodes) + !Skin.HasSetting(HomeMenuNoStreamCinemaButton) + System.HasAddon(plugin.video.stream-cinema-2-release)">
+					<param name="content_path" value="plugin://plugin.video.stream-cinema-2-release/trakt/special-list?list_type=likes"/>
+					<param name="widget_header" value=$LOCALIZE[31426]/>
+					<param name="widget_target" value="videos"/>
+					<param name="list_id" value="42007"/>
+					<param name="stream-cinema" value="true"/> <!-- Easy/SC+ -->
+				</include>
+				<include content="WidgetListPoster" condition="Skin.HasSetting(SCTraktPopularWidgetList) + !Skin.HasSetting(HomeMenuNoStreamCinemaButton) + System.HasAddon(plugin.video.stream-cinema-2-release)">
+					<param name="content_path" value="plugin://plugin.video.stream-cinema-2-release/trakt/special-list?list_type=popular"/>
+					<param name="widget_header" value=$LOCALIZE[31427]/>
+					<param name="widget_target" value="videos"/>
+					<param name="list_id" value="42008"/>
+					<param name="stream-cinema" value="true"/> <!-- Easy/SC+ -->
+				</include>
+				<include content="WidgetWallPoster" condition="Skin.HasSetting(SCTraktPopularWidgetWall) + !Skin.HasSetting(HomeMenuNoStreamCinemaButton) + System.HasAddon(plugin.video.stream-cinema-2-release)">
+					<param name="content_path" value="plugin://plugin.video.stream-cinema-2-release/trakt/special-list?list_type=popular"/>
+					<param name="widget_header" value=$LOCALIZE[31427]/>
+					<param name="widget_target" value="videos"/>
+					<param name="list_id" value="42008"/>
+					<param name="stream-cinema" value="true"/> <!-- Easy/SC+ -->
+				</include>
+				<include content="WidgetListEpisodes" condition="Skin.HasSetting(SCTraktPopularWidgetListEpisodes) + !Skin.HasSetting(HomeMenuNoStreamCinemaButton) + System.HasAddon(plugin.video.stream-cinema-2-release)">
+					<param name="content_path" value="plugin://plugin.video.stream-cinema-2-release/trakt/special-list?list_type=popular"/>
+					<param name="widget_header" value=$LOCALIZE[31427]/>
+					<param name="widget_target" value="videos"/>
+					<param name="list_id" value="42008"/>
+					<param name="stream-cinema" value="true"/> <!-- Easy/SC+ -->
+				</include>
+				<include content="WidgetWallEpisodes" condition="Skin.HasSetting(SCTraktPopularWidgetWallEpisodes) + !Skin.HasSetting(HomeMenuNoStreamCinemaButton) + System.HasAddon(plugin.video.stream-cinema-2-release)">
+					<param name="content_path" value="plugin://plugin.video.stream-cinema-2-release/trakt/special-list?list_type=popular"/>
+					<param name="widget_header" value=$LOCALIZE[31427]/>
+					<param name="widget_target" value="videos"/>
+					<param name="list_id" value="42008"/>
+					<param name="stream-cinema" value="true"/> <!-- Easy/SC+ -->
+				</include>
+				<include content="WidgetListPoster" condition="Skin.HasSetting(SCTraktWTrendingWidgetList) + !Skin.HasSetting(HomeMenuNoStreamCinemaButton) + System.HasAddon(plugin.video.stream-cinema-2-release)">
+					<param name="content_path" value="plugin://plugin.video.stream-cinema-2-release/trakt/special-list?list_type=trending"/>
+					<param name="widget_header" value=$LOCALIZE[31428]/>
+					<param name="widget_target" value="videos"/>
+					<param name="list_id" value="42009"/>
+					<param name="stream-cinema" value="true"/> <!-- Easy/SC+ -->
+				</include>
+				<include content="WidgetWallPoster" condition="Skin.HasSetting(SCTraktWTrendingWidgetWall) + !Skin.HasSetting(HomeMenuNoStreamCinemaButton) + System.HasAddon(plugin.video.stream-cinema-2-release)">
+					<param name="content_path" value="plugin://plugin.video.stream-cinema-2-release/trakt/special-list?list_type=trending"/>
+					<param name="widget_header" value=$LOCALIZE[31428]/>
+					<param name="widget_target" value="videos"/>
+					<param name="list_id" value="42009"/>
+					<param name="stream-cinema" value="true"/> <!-- Easy/SC+ -->
+				</include>
+				<include content="WidgetListEpisodes" condition="Skin.HasSetting(SCTraktTrendingWidgetListEpisodes) + !Skin.HasSetting(HomeMenuNoStreamCinemaButton) + System.HasAddon(plugin.video.stream-cinema-2-release)">
+					<param name="content_path" value="plugin://plugin.video.stream-cinema-2-release/trakt/special-list?list_type=trending"/>
+					<param name="widget_header" value=$LOCALIZE[31428]/>
+					<param name="widget_target" value="videos"/>
+					<param name="list_id" value="42009"/>
+					<param name="stream-cinema" value="true"/> <!-- Easy/SC+ -->
+				</include>
+				<include content="WidgetWallEpisodes" condition="Skin.HasSetting(SCTraktTrendingWidgetWallEpisodes) + !Skin.HasSetting(HomeMenuNoStreamCinemaButton) + System.HasAddon(plugin.video.stream-cinema-2-release)">
+					<param name="content_path" value="plugin://plugin.video.stream-cinema-2-release/trakt/special-list?list_type=trending"/>
+					<param name="widget_header" value=$LOCALIZE[31428]/>
+					<param name="widget_target" value="videos"/>
+					<param name="list_id" value="42009"/>
+					<param name="stream-cinema" value="true"/> <!-- Easy/SC+ -->
+				</include>
+			</control>
+			<include>WidgetTitle</include>
+		</control>
 		<control type="group" id="42500"> <!-- Easy/SC+ SC History -->
 			<include>ShiftWidgets</include>
 			<include content="WidgetInfo" condition="Skin.HasSetting(show_info) + !Skin.HasSetting(show_fullwidget)"><param name="list_id" value="42150"/><param name="year" value="false"/></include> <!-- Easy/SC+ -->
@@ -1362,6 +1633,46 @@
 					<param name="widget_header" value=$LOCALIZE[31381]/>
 					<param name="widget_target" value="videos"/>
 					<param name="list_id" value="42156"/>
+					<param name="stream-cinema" value="true"/> <!-- Easy/SC+ -->
+				</include>
+			</control>
+			<include>WidgetTitle</include>
+		</control>
+		<control type="group" id="43000"> <!-- Easy/SC+ SC Download -->
+			<include>ShiftWidgets</include>
+			<include content="WidgetInfo" condition="Skin.HasSetting(show_info) + !Skin.HasSetting(show_fullwidget)"><param name="list_id" value="42350"/><param name="year" value="false"/></include> <!-- Easy/SC+ -->
+			<visible>String.IsEqual(Container(9000).ListItem.Property(id),streamcinemadownload)</visible>
+			<include content="Visible_Right_Delayed">
+				<param name="id" value="streamcinemadownload"/>
+			</include>
+			<control type="grouplist" id="42322">
+				<include>WidgetGroupListCommon</include>
+				<include content="WidgetListPoster" condition="Skin.HasSetting(SCDownloadWidgetList) + !Skin.HasSetting(HomeMenuNoStreamCinemaButton) + System.HasAddon(plugin.video.stream-cinema-2-release)">
+					<param name="content_path" value="plugin://plugin.video.stream-cinema-2-release/download-queue/"/>
+					<param name="widget_header" value=$LOCALIZE[31419]/>
+					<param name="widget_target" value="videos"/>
+					<param name="list_id" value="42355"/>
+					<param name="stream-cinema" value="true"/> <!-- Easy/SC+ -->
+				</include>
+				<include content="WidgetWallPoster" condition="Skin.HasSetting(SCDownloadWidgetWall) + !Skin.HasSetting(HomeMenuNoStreamCinemaButton) + System.HasAddon(plugin.video.stream-cinema-2-release)">
+					<param name="content_path" value="plugin://plugin.video.stream-cinema-2-release/download-queue/"/>
+					<param name="widget_header" value=$LOCALIZE[31419]/>
+					<param name="widget_target" value="videos"/>
+					<param name="list_id" value="42355"/>
+					<param name="stream-cinema" value="true"/> <!-- Easy/SC+ -->
+				</include>
+				<include content="WidgetListEpisodes" condition="Skin.HasSetting(SCDownloadWidgetListEpisodes) + !Skin.HasSetting(HomeMenuNoStreamCinemaButton) + System.HasAddon(plugin.video.stream-cinema-2-release)">
+					<param name="content_path" value="plugin://plugin.video.stream-cinema-2-release/download-queue/"/>
+					<param name="widget_header" value=$LOCALIZE[31419]/>
+					<param name="widget_target" value="videos"/>
+					<param name="list_id" value="42355"/>
+					<param name="stream-cinema" value="true"/> <!-- Easy/SC+ -->
+				</include>
+				<include content="WidgetWallEpisodes" condition="Skin.HasSetting(SCDownloadWidgetWallEpisodes) + !Skin.HasSetting(HomeMenuNoStreamCinemaButton) + System.HasAddon(plugin.video.stream-cinema-2-release)">
+					<param name="content_path" value="plugin://plugin.video.stream-cinema-2-release/download-queue/"/>
+					<param name="widget_header" value=$LOCALIZE[31419]/>
+					<param name="widget_target" value="videos"/>
+					<param name="list_id" value="42355"/>
 					<param name="stream-cinema" value="true"/> <!-- Easy/SC+ -->
 				</include>
 			</control>

@@ -108,10 +108,20 @@
 							<label2>[CR][CR]Stream Cinema 2</label2>
 							<onclick condition="!Skin.HasSetting(touchmode)">Skin.ToggleSetting(SCTVShow)</onclick>
 						</item>
+						<item id="1080"> <!-- SC Trakt -->
+							<label>$LOCALIZE[31417]</label>
+							<label2>[CR][CR]Stream Cinema 2</label2>
+							<onclick condition="!Skin.HasSetting(touchmode)">Skin.ToggleSetting(SCTrakt)</onclick>
+						</item>
 						<item id="1090"> <!-- SC History -->
 							<label>$LOCALIZE[31381]</label>
 							<label2>[CR][CR]Stream Cinema 2</label2>
 							<onclick condition="!Skin.HasSetting(touchmode)">Skin.ToggleSetting(SCHistory)</onclick>
+						</item>
+						<item id="1100"> <!-- SC Download -->
+							<label>$LOCALIZE[31419]</label>
+							<label2>[CR][CR]Stream Cinema 2</label2>
+							<onclick condition="!Skin.HasSetting(touchmode)">Skin.ToggleSetting(SCDownload)</onclick>
 						</item>
 						<!-- <item id="1160"> -->  <!-- SC Trakt -->
 							<!-- <label>Moje seznamy</label>
@@ -399,6 +409,77 @@
 							<label2>$VAR[SCSeriesLastaddetWidgetvar]</label2>
 						</control>
 					</control>
+					<control type="grouplist" id="1081"> <!-- Easy/SC+ Trakt -->
+						<onleft>1000</onleft>
+						<onright>1000</onright>
+						<onup>1061</onup>
+						<ondown>1061</ondown>
+						<visible>Container(1000).HasFocus(1080)</visible>
+						<control type="radiobutton" id="1082"> <!-- Trakt Menu enable/disable -->
+							<label>$LOCALIZE[31416]</label>
+							<include>DefaultSettingButton</include>
+							<selected>Skin.HasSetting(SCTrakt)</selected>
+							<onclick>Skin.ToggleSetting(SCTrakt)</onclick>
+						</control>
+						<control type="image" id="1083">
+							<height>3</height>
+							<texture>dialogs/separator-grey.png</texture>
+						</control>
+						<control type="button" id="1085"> <!-- Trakt Watch List Widget -->
+							<label>$LOCALIZE[31420]</label>
+							<include>DefaultSettingButton</include>
+							<onclick>Skin.SelectBool(31420, 31378|SCTraktWatchlistWidgetList, 31379|SCTraktWatchlistWidgetWall ,31409|SCTraktWatchlistWidgetListEpisodes, 31408|SCTraktWatchlistWidgetWallEpisodes , 31380|SCTraktWatchlistWidgetNone)</onclick>
+							<label2>$VAR[TraktWatchlistVar]</label2>
+						</control>
+						<control type="button" id="1086"> <!-- Trakt Rated movies Widget -->
+							<label>$LOCALIZE[31421]</label>
+							<include>DefaultSettingButton</include>
+							<onclick>Skin.SelectBool(31421, 31378|SCTraktRatedMoviesWidgetList, 31379|SCTraktRatedMoviesWidgetWall ,31409|SCTraktRatedMoviesWidgetListEpisodes, 31408|SCTraktRatedMoviesWidgetWallEpisodes , 31380|SCTraktRatedMoviesWidgetNone)</onclick>
+							<label2>$VAR[SCTraktRatedMoviesWidgetvar]</label2>
+						</control>
+						<control type="button" id="1087"> <!-- Trakt Rated Series Widget -->
+							<label>$LOCALIZE[31422]</label>
+							<include>DefaultSettingButton</include>
+							<onclick>Skin.SelectBool(31422, 31378|SCTraktRatedSeriesWidgetList, 31379|SCTraktRatedSeriesWidgetWall ,31409|SCTraktRatedSeriesWidgetListEpisodes, 31408|SCTraktRatedSeriesWidgetWallEpisodes , 31380|SCTraktRatedSeriesWidgetNone)</onclick>
+							<label2>$VAR[SCTraktRatedSeriesWidgetvar]</label2>
+						</control>
+						<control type="button" id="1088"> <!-- Trakt Watched Movies Widget -->
+							<label>$LOCALIZE[31423]</label>
+							<include>DefaultSettingButton</include>
+							<onclick>Skin.SelectBool(31423, 31378|SCTraktWatchedMoviesWidgetList, 31379|SCTraktWatchedMoviesWidgetWall ,31409|SCTraktWatchedMoviesWidgetListEpisodes, 31408|SCTraktWatchedMoviesWidgetWallEpisodes , 31380|SCTraktWatchedMoviesWidgetNone)</onclick>
+							<label2>$VAR[SCTraktWatchedMoviesWidgetvar]</label2>
+						</control>
+						<control type="button" id="1089"> <!-- Trakt Watched Series Widget -->
+							<label>$LOCALIZE[31424]</label>
+							<include>DefaultSettingButton</include>
+							<onclick>Skin.SelectBool(31424, 31378|SCTraktWatchedSeriesWidgetList, 31379|SCTraktWatchedSeriesWidgetWall ,31409|SCTraktWatchedSeriesWidgetListEpisodes, 31408|SCTraktWatchedSeriesWidgetWallEpisodes , 31380|SCTraktWatchedSeriesWidgetNone)</onclick>
+							<label2>$VAR[SCTraktWatchedSeriesWidgetvar]</label2>
+						</control>
+						<control type="button" id="1093"> <!-- Trakt Friends and following Widget -->
+							<label>$LOCALIZE[31425]</label>
+							<include>DefaultSettingButton</include>
+							<onclick>Skin.SelectBool(31425, 31378|SCTraktFriendsWidgetList, 31379|SCTraktFriendsWidgetWall ,31409|SCTraktFriendsWidgetListEpisodes, 31408|SCTraktFriendsWidgetWallEpisodes , 31380|SCTraktFriendsWidgetNone)</onclick>
+							<label2>$VAR[SCTraktFriendsWidgetvar]</label2>
+						</control>
+						<control type="button" id="1094"> <!-- Trakt Liked list Widget -->
+							<label>$LOCALIZE[31426]</label>
+							<include>DefaultSettingButton</include>
+							<onclick>Skin.SelectBool(31426, 31378|SCTraktLikedWidgetList, 31379|SCTraktLikedWidgetWall ,31409|SCTraktLastadLikedListEpisodes, 31408|SCTraktLikedWidgetWallEpisodes , 31380|SCTraktLikedWidgetNone)</onclick>
+							<label2>$VAR[SCTraktLikedWidgetvar]</label2>
+						</control>
+						<control type="button" id="1095"> <!-- Trakt Popular list Widget -->
+							<label>$LOCALIZE[31427]</label>
+							<include>DefaultSettingButton</include>
+							<onclick>Skin.SelectBool(31427, 31378|SCTraktPopularWidgetList, 31379|SCTraktPopularWidgetWall ,31409|SCTraktPopularWidgetListEpisodes, 31408|SCTraktPopularWidgetWallEpisodes , 31380|SCTraktPopularWidgetNone)</onclick>
+							<label2>$VAR[SCTraktPopularWidgetvar]</label2>
+						</control>
+						<control type="button" id="1096"> <!-- Trakt Trending list Widget -->
+							<label>$LOCALIZE[31428]</label>
+							<include>DefaultSettingButton</include>
+							<onclick>Skin.SelectBool(31428, 31378|SCTraktTrendingWidgetList, 31379|SCTraktTrendingWidgetWall ,31409|SCTraktTrendingWidgetListEpisodes, 31408|SCTraktTrendingWidgetWallEpisodes , 31380|SCTraktTrendingWidgetNone)</onclick>
+							<label2>$VAR[SCTraktTrendingWidgetvar]</label2>
+						</control>
+					</control>
 					<control type="grouplist" id="1091"> <!-- Easy/SC+ History -->
 						<onleft>1000</onleft>
 						<onright>1000</onright>
@@ -412,6 +493,23 @@
 							<label2>$VAR[SCHistoryVar]</label2>
 						</control>
 						<control type="image" id="1093">
+							<height>3</height>
+							<texture>dialogs/separator-grey.png</texture>
+						</control>
+					</control>
+					<control type="grouplist" id="1101"> <!-- Easy/SC+ Download -->
+						<onleft>1000</onleft>
+						<onright>1000</onright>
+						<onup>1091</onup>
+						<ondown>1091</ondown>
+						<visible>Container(1000).HasFocus(1100)</visible>
+						<control type="button" id="1102"> <!-- History Menu enable/disable -->
+							<label>$LOCALIZE[31418]</label>
+							<include>DefaultSettingButton</include>
+							<onclick>Skin.SelectBool(31418, 31378|SCDownloadWidgetList, 31379|SCDownloadWidgetWall ,31409|SCDownloadWidgetListEpisodes, 31408|SCDownloadWidgetWallEpisodes , 31380|SCDownloadWidgetNone)</onclick>
+							<label2>$VAR[SCDownloadVar]</label2>
+						</control>
+						<control type="image" id="1103">
 							<height>3</height>
 							<texture>dialogs/separator-grey.png</texture>
 						</control>

@@ -243,11 +243,81 @@
 		<value condition="Skin.HasSetting(SCSeriesLastaddetWidgetListEpisodes)">$LOCALIZE[31409]</value>
 		<value>$LOCALIZE[31380]</value>
 	</variable>
+	<variable name="TraktWatchlistVar">
+		<value condition="Skin.HasSetting(SCTraktWatchWidgetWall)">$LOCALIZE[31379]</value>
+		<value condition="Skin.HasSetting(SCTraktWatchWidgetList)">$LOCALIZE[31378]</value>
+		<value condition="Skin.HasSetting(SCTraktWatchWidgetWallEpisodes)">$LOCALIZE[31408]</value>
+		<value condition="Skin.HasSetting(SCTraktWatchWidgetListEpisodes)">$LOCALIZE[31409]</value>
+		<value>$LOCALIZE[31380]</value>
+	</variable>
+	<variable name="SCTraktRatedMoviesWidgetvar">
+		<value condition="Skin.HasSetting(SCTraktRatedMoviesWidgetWall)">$LOCALIZE[31379]</value>
+		<value condition="Skin.HasSetting(SCTraktRatedMoviesWidgetList)">$LOCALIZE[31378]</value>
+		<value condition="Skin.HasSetting(SCTraktRatedMoviesWidgetWallEpisodes)">$LOCALIZE[31408]</value>
+		<value condition="Skin.HasSetting(SCTraktRatedMoviesWidgetListEpisodes)">$LOCALIZE[31409]</value>
+		<value>$LOCALIZE[31380]</value>
+	</variable>
+	<variable name="SCTraktRatedSeriesWidgetvar">
+		<value condition="Skin.HasSetting(SCTraktRatedSeriesWidgetWall)">$LOCALIZE[31379]</value>
+		<value condition="Skin.HasSetting(SCTraktRatedSeriesWidgetList)">$LOCALIZE[31378]</value>
+		<value condition="Skin.HasSetting(SCTraktRatedSeriesWidgetWallEpisodes)">$LOCALIZE[31408]</value>
+		<value condition="Skin.HasSetting(SCTraktRatedSeriesWidgetListEpisodes)">$LOCALIZE[31409]</value>
+		<value>$LOCALIZE[31380]</value>
+	</variable>
+	<variable name="SCTraktWatchedMoviesWidgetvar">
+		<value condition="Skin.HasSetting(SCTraktWatchedMoviesWidgetWall)">$LOCALIZE[31379]</value>
+		<value condition="Skin.HasSetting(SCTraktWatchedMoviesWidgetList)">$LOCALIZE[31378]</value>
+		<value condition="Skin.HasSetting(SCTraktWatchedMoviesWidgetWallEpisodes)">$LOCALIZE[31408]</value>
+		<value condition="Skin.HasSetting(SCTraktWatchedMoviesWidgetListEpisodes)">$LOCALIZE[31409]</value>
+		<value>$LOCALIZE[31380]</value>
+	</variable>
+	<variable name="SCTraktWatchedSeriesWidgetvar">
+		<value condition="Skin.HasSetting(SCTraktWatchedSeriesWidgetWall)">$LOCALIZE[31379]</value>
+		<value condition="Skin.HasSetting(SCTraktWatchedSeriesWidgetList)">$LOCALIZE[31378]</value>
+		<value condition="Skin.HasSetting(SCTraktWatchedSeriesWidgetWallEpisodes)">$LOCALIZE[31408]</value>
+		<value condition="Skin.HasSetting(SCTraktWatchedSeriesWidgetListEpisodes)">$LOCALIZE[31409]</value>
+		<value>$LOCALIZE[31380]</value>
+	</variable>
+	<variable name="SCTraktFriendsWidgetvar">
+		<value condition="Skin.HasSetting(SCTraktFriendsWidgetWall)">$LOCALIZE[31379]</value>
+		<value condition="Skin.HasSetting(SCTraktFriendsWidgetList)">$LOCALIZE[31378]</value>
+		<value condition="Skin.HasSetting(SCTraktFriendsWidgetWallEpisodes)">$LOCALIZE[31408]</value>
+		<value condition="Skin.HasSetting(SCTraktFriendsWidgetListEpisodes)">$LOCALIZE[31409]</value>
+		<value>$LOCALIZE[31380]</value>
+	</variable>
+	<variable name="SCTraktLikedWidgetvar">
+		<value condition="Skin.HasSetting(SCTraktLikedWidgetWall)">$LOCALIZE[31379]</value>
+		<value condition="Skin.HasSetting(SCTraktLikedWidgetList)">$LOCALIZE[31378]</value>
+		<value condition="Skin.HasSetting(SCTraktLikedWidgetWallEpisodes)">$LOCALIZE[31408]</value>
+		<value condition="Skin.HasSetting(SCTraktLikedWidgetListEpisodes)">$LOCALIZE[31409]</value>
+		<value>$LOCALIZE[31380]</value>
+	</variable>
+	<variable name="SCTraktPopularWidgetvar">
+		<value condition="Skin.HasSetting(SCTraktPopularWidgetWall)">$LOCALIZE[31379]</value>
+		<value condition="Skin.HasSetting(SCTraktPopularWidgetList)">$LOCALIZE[31378]</value>
+		<value condition="Skin.HasSetting(SCTraktPopularWidgetWallEpisodes)">$LOCALIZE[31408]</value>
+		<value condition="Skin.HasSetting(SCTraktPopularWidgetListEpisodes)">$LOCALIZE[31409]</value>
+		<value>$LOCALIZE[31380]</value>
+	</variable>
+	<variable name="SCTraktTrendingWidgetvar">
+		<value condition="Skin.HasSetting(SCTraktTrendingWidgetWall)">$LOCALIZE[31379]</value>
+		<value condition="Skin.HasSetting(SCTraktTrendingWidgetList)">$LOCALIZE[31378]</value>
+		<value condition="Skin.HasSetting(SCTraktTrendingWidgetWallEpisodes)">$LOCALIZE[31408]</value>
+		<value condition="Skin.HasSetting(SCTraktTrendingWidgetListEpisodes)">$LOCALIZE[31409]</value>
+		<value>$LOCALIZE[31380]</value>
+	</variable>
 	<variable name="SCHistoryVar">
 		<value condition="Skin.HasSetting(schistorywidgetwall)">$LOCALIZE[31379]</value>
 		<value condition="Skin.HasSetting(schistorywidgetlist)">$LOCALIZE[31378]</value>
 		<value condition="Skin.HasSetting(schistorywidgetwallEpisodes)">$LOCALIZE[31408]</value>
 		<value condition="Skin.HasSetting(schistorywidgetlistEpisodes)">$LOCALIZE[31409]</value>
+		<value>$LOCALIZE[31380]</value>
+	</variable>
+	<variable name="SCDownloadVar">
+		<value condition="Skin.HasSetting(scDownloadwidgetwall)">$LOCALIZE[31379]</value>
+		<value condition="Skin.HasSetting(scDownloadwidgetlist)">$LOCALIZE[31378]</value>
+		<value condition="Skin.HasSetting(scDownloadwidgetwallEpisodes)">$LOCALIZE[31408]</value>
+		<value condition="Skin.HasSetting(scDownloadwidgetlistEpisodes)">$LOCALIZE[31409]</value>
 		<value>$LOCALIZE[31380]</value>
 	</variable>
 	<variable name="NovaAllWidgetVar">

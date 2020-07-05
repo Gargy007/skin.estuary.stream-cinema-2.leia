@@ -1137,3 +1137,55 @@ msgstr ""
 msgctxt "#31415"
 msgid "English"
 msgstr ""
+
+msgctxt "#31416"
+msgid "Widget Trakt"
+msgstr ""
+
+msgctxt "#31417"
+msgid "Trakt"
+msgstr ""
+
+msgctxt "#31418"
+msgid "Widget Download"
+msgstr ""
+
+msgctxt "#31419"
+msgid "Download"
+msgstr ""
+
+msgctxt "#31420"
+msgid "Watch List"
+msgstr ""
+
+msgctxt "#31421"
+msgid "Rated movies"
+msgstr ""
+
+msgctxt "#31422"
+msgid "Rated shows"
+msgstr ""
+
+msgctxt "#31423"
+msgid "Watched movies"
+msgstr ""
+
+msgctxt "#31424"
+msgid "Watched shows"
+msgstr ""
+
+msgctxt "#31425"
+msgid "Friends and following"
+msgstr ""
+
+msgctxt "#31426"
+msgid "Liked list"
+msgstr ""
+
+msgctxt "#31427"
+msgid "Popular list"
+msgstr ""
+
+msgctxt "#31428"
+msgid "Trending list"
+msgstr ""
