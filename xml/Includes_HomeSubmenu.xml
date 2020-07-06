@@ -155,7 +155,7 @@
 			<item>
 				<label>$LOCALIZE[31417]</label>
 				<onclick>ActivateWindow(10025,&quot;plugin://plugin.video.stream-cinema-2-release/trakt/lists?user=me&quot;,return)</onclick>
-				<thumb>icons/sidemenu/sc2_tvshows.png</thumb>
+				<thumb>icons/sc2/trakt.png</thumb>
 			</item>
 			<item>
 				<label>$LOCALIZE[31381]</label>
@@ -165,7 +165,7 @@
 			<item>
 				<label>$LOCALIZE[31419]</label>
 				<onclick>ActivateWindow(10025,&quot;plugin://plugin.video.stream-cinema-2-release/download-queue/&quot;,return)</onclick>
-				<thumb>icons/sidemenu/sc2_history.png</thumb>
+				<thumb>icons/sidemenu/download.png</thumb>
 			</item>
 			<item>
 				<label>$LOCALIZE[31184]</label>
@@ -214,17 +214,17 @@
 			<item>  <!-- By country -->
 				<label>$LOCALIZE[31429]</label>
 				<onclick>ActivateWindow(10025,&quot;plugin://plugin.video.stream-cinema-2-release/count_menu/?count_type=countries&amp;filter_type=country&amp;filter_value&amp;media_type=movie&amp;page=0&amp;render_type=default&quot;,return)</onclick>
-				<thumb>icons/sc2/genre.png</thumb>
+				<thumb>icons/sc2/country.png</thumb>
 			</item>
 			<item>  <!-- By language -->
 				<label>$LOCALIZE[31430]</label>
 				<onclick>ActivateWindow(10025,&quot;plugin://plugin.video.stream-cinema-2-release/count_menu/?count_type=languages&amp;filter_type=language&amp;filter_value&amp;media_type=movie&amp;page=0&amp;render_type=default&quot;,return)</onclick>
-				<thumb>icons/sc2/genre.png</thumb>
+				<thumb>icons/sc2/language.png</thumb>
 			</item>
 			<item>  <!-- By year -->
 				<label>$LOCALIZE[31431]</label>
 				<onclick>ActivateWindow(10025,&quot;plugin://plugin.video.stream-cinema-2-release/count_menu/?count_type=years&amp;filter_type=year&amp;filter_value&amp;media_type=movie&amp;page=0&amp;render_type=default&quot;,return)</onclick>
-				<thumb>icons/sc2/genre.png</thumb>
+				<thumb>icons/sc2/year.png</thumb>
 			</item>
 			<item>  <!-- By studio -->
 				<label>$LOCALIZE[31402]</label>
@@ -273,17 +273,17 @@
 			<item>  <!-- By country -->
 				<label>$LOCALIZE[31429]</label>
 				<onclick>ActivateWindow(10025,&quot;plugin://plugin.video.stream-cinema-2-release/count_menu/?count_type=countries&amp;filter_type=country&amp;filter_value&amp;media_type=tvshow&amp;page=0&amp;render_type=default&quot;,return)</onclick>
-				<thumb>icons/sc2/genre.png</thumb>
+				<thumb>icons/sc2/country.png</thumb>
 			</item>
 			<item>  <!-- By language -->
 				<label>$LOCALIZE[31430]</label>
 				<onclick>ActivateWindow(10025,&quot;plugin://plugin.video.stream-cinema-2-release/count_menu/?count_type=languages&amp;filter_type=language&amp;filter_value&amp;media_type=tvshow&amp;page=0&amp;render_type=default&quot;,return)</onclick>
-				<thumb>icons/sc2/genre.png</thumb>
+				<thumb>icons/sc2/language.png</thumb>
 			</item>
 			<item>  <!-- By year -->
 				<label>$LOCALIZE[31431]</label>
 				<onclick>ActivateWindow(10025,&quot;plugin://plugin.video.stream-cinema-2-release/count_menu/?count_type=studios&amp;filter_type=studio&amp;filter_value&amp;media_type=tvshow&amp;page=0&amp;render_type=default&quot;,return)</onclick>
-				<thumb>icons/sc2/genre.png</thumb>
+				<thumb>icons/sc2/year.png</thumb>
 			</item>
 			<item>  <!-- By studio -->
 				<label>$LOCALIZE[31402]</label>
