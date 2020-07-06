@@ -191,6 +191,13 @@
 		<value condition="Skin.HasSetting(SCMainTVShowsPopularWidgetlistEpisodes)">$LOCALIZE[31409]</value>
 		<value>$LOCALIZE[31380]</value>
 	</variable>
+	<variable name="MaiDownloadVar">
+		<value condition="Skin.HasSetting(SCMainDownloadWidgetwall)">$LOCALIZE[31379]</value>
+		<value condition="Skin.HasSetting(SCMainDownloadWidgetlist)">$LOCALIZE[31378]</value>
+		<value condition="Skin.HasSetting(SCMainDownloadWidgetwallEpisodes)">$LOCALIZE[31408]</value>
+		<value condition="Skin.HasSetting(SCMainDownloadWidgetlistEpisodes)">$LOCALIZE[31409]</value>
+		<value>$LOCALIZE[31380]</value>
+	</variable>
 	<variable name="SCMainNewWidgetvar">
 		<value condition="Skin.HasSetting(SCMainNewWidgetWall)">$LOCALIZE[31379]</value>
 		<value condition="Skin.HasSetting(SCMainNewWidgetList)">$LOCALIZE[31378]</value>

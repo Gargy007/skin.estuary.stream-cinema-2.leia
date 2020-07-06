@@ -283,6 +283,12 @@
 							<selected>Skin.HasSetting(SCMainWatchedWidget)</selected>
 							<onclick>Skin.ToggleSetting(SCMainWatchedWidget)</onclick>
 						</control>
+						<control type="button" id="1032"> <!-- Main Download Widget -->
+							<label>$LOCALIZE[31419]</label>
+							<include>DefaultSettingButton</include>
+							<onclick>Skin.SelectBool(31419, 31378|SCMainDownloadWidgetList, 31379|SCMainDownloadWidgetWall ,31409|SCMainDownloadWidgetListEpisodes, 31408|SCMainDownloadWidgetWallEpisodes , 31380|SCMainDownloadWidgetNone)</onclick>
+							<label2>$VAR[MaiDownloadVar]</label2>
+						</control>
 					</control>
 					<control type="scrollbar" id="1039">
 						<right>0</right>
