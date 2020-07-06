@@ -1191,3 +1191,15 @@ msgstr "Populární seznam"
 msgctxt "#31428"
 msgid "Trending list"
 msgstr "Seznam trendů"
+
+msgctxt "#31429"
+msgid "By country"
+msgstr "Podle země"
+
+msgctxt "#31430"
+msgid "By language"
+msgstr "Podle jazyka"
+
+msgctxt "#31431"
+msgid "By year"
+msgstr "Podle roku"
