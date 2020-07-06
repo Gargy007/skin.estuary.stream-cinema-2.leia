@@ -49,7 +49,7 @@
     <onload condition="!String.IsEqual(Skin.String(DefaultLoaded),3.0.0.a2)">Skin.ToggleSetting(HomeMenuNoRadiodeButton)</onload>
     <onload condition="!String.IsEqual(Skin.String(DefaultLoaded),3.0.0.a2)">Skin.SetBool(RadiodeSearch)</onload>
     <onload condition="!String.IsEqual(Skin.String(DefaultLoaded),3.0.0.a2)">Skin.SetString(widget_limit,40)</onload>
-    <onload condition="!String.IsEqual(Skin.String(DefaultLoaded),3.0.0.a2)">Skin.SetBool(scdownloadwidgetwall)</onload>
+    <onload condition="!String.IsEqual(Skin.String(DefaultLoaded),3.0.0.a2)">Skin.SetBool(scdownloadwidgetwallepisodes)</onload>
     
 
     <onload condition="!String.IsEqual(Skin.String(DefaultLoaded1),3.0.3)">Skin.SetString(preferred_language,cs)</onload>
