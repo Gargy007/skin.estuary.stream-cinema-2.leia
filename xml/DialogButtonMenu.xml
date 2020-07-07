@@ -20,6 +20,8 @@
 					<item> <!-- Easy/SC+ -->
 						<label>$LOCALIZE[31202]</label>
 						<onclick>ReloadSkin()</onclick>
+						<!-- Load the language setting from the plugin -->
+    					<onclick>XBMC.RunScript(special://skin/xml/get_lang.py)</onclick>
 					</item>
 					<item> <!-- Easy/SC+ -->
 						<label>$LOCALIZE[31201]</label>

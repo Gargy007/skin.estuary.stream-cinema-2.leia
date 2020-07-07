@@ -50,18 +50,15 @@
     <onload condition="!String.IsEqual(Skin.String(DefaultLoaded),3.0.0.a2)">Skin.SetBool(RadiodeSearch)</onload>
     <onload condition="!String.IsEqual(Skin.String(DefaultLoaded),3.0.0.a2)">Skin.SetString(widget_limit,40)</onload>
     
-
-    <onload condition="!String.IsEqual(Skin.String(DefaultLoaded1),3.0.3)">Skin.SetString(preferred_language,cs)</onload>
-    <onload condition="!String.IsEqual(Skin.String(DefaultLoaded1),3.0.3)">Skin.SetString(fallback_language,sk)</onload>
-    
     <!-- Force to apply changed settings -->
-    <onload condition="!String.IsEqual(Skin.String(DefaultLoaded1),3.0.3)">ActivateWindow(programs)</onload>
-    <onload condition="!String.IsEqual(Skin.String(DefaultLoaded1),3.0.3)">ActivateWindow(home)</onload>
-
+    <onload condition="!String.IsEqual(Skin.String(DefaultLoaded1),3.0.0.a2)">ActivateWindow(programs)</onload>
+    <onload condition="!String.IsEqual(Skin.String(DefaultLoaded1),3.0.0.a2)">ActivateWindow(home)</onload>
 
     <!-- Lock the default settings to not be applied anymore -->
     <onload condition="String.IsEmpty(Skin.String(DefaultLoaded))">Skin.SetString(DefaultLoaded, 3.0.0.a2)</onload>
-    <onload condition="String.IsEmpty(Skin.String(DefaultLoaded1))">Skin.SetString(DefaultLoaded1, 3.0.3)</onload>
+
+    <!-- Load the language setting from the plugin -->
+    <onload>XBMC.RunScript(special://skin/xml/get_lang.py)</onload>
 </window>
 
 
