@@ -251,10 +251,10 @@
 		<value>$LOCALIZE[31380]</value>
 	</variable>
 	<variable name="TraktWatchlistVar">
-		<value condition="Skin.HasSetting(SCTraktWatchWidgetWall)">$LOCALIZE[31379]</value>
-		<value condition="Skin.HasSetting(SCTraktWatchWidgetList)">$LOCALIZE[31378]</value>
-		<value condition="Skin.HasSetting(SCTraktWatchWidgetWallEpisodes)">$LOCALIZE[31408]</value>
-		<value condition="Skin.HasSetting(SCTraktWatchWidgetListEpisodes)">$LOCALIZE[31409]</value>
+		<value condition="Skin.HasSetting(SCTraktWatchlistWidgetWall)">$LOCALIZE[31379]</value>
+		<value condition="Skin.HasSetting(SCTraktWatchlistWidgetList)">$LOCALIZE[31378]</value>
+		<value condition="Skin.HasSetting(SCTraktWatchlistWidgetWallEpisodes)">$LOCALIZE[31408]</value>
+		<value condition="Skin.HasSetting(SCTraktWatchlistWidgetListEpisodes)">$LOCALIZE[31409]</value>
 		<value>$LOCALIZE[31380]</value>
 	</variable>
 	<variable name="SCTraktRatedMoviesWidgetvar">
