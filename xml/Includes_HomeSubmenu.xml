@@ -193,7 +193,7 @@
 			</item>
 			<item>  <!-- New Dubbed releases -->
 				<label>$LOCALIZE[31401]</label>
-				<onclick>ActivateWindow(Videos,&quot;plugin://plugin.video.stream-cinema-2-release/get_media/?media_type=movie&amp;render_type=default&amp;url=%2fapi%2fmedia%2ffilter%2fdubbed%3flang%3den%26lang%3dcs%26sort%3dpremiered%26type%3dmovie%26order%3ddesc&quot;,return)</onclick>
+				<onclick>ActivateWindow(Videos,&quot;$VAR[DirectoryNewDubbedMoviesVar]&quot;,return)</onclick>
 				<thumb>icons/sc2/new_dub.png</thumb>
 			</item>
 			<item>  <!-- Recently added -->
@@ -252,7 +252,7 @@
 			</item>
 			<item>  <!-- New Dubbed releases -->
 				<label>$LOCALIZE[31401]</label>
-				<onclick>ActivateWindow(Videos,&quot;plugin://plugin.video.stream-cinema-2-release/get_media/?media_type=movie&amp;render_type=default&amp;url=%2fapi%2fmedia%2ffilter%2fdubbed%3flang%3den%26lang%3den%26sort%3dpremiered%26type%3dtvshow%26order%3ddesc&quot;,return)</onclick>
+				<onclick>ActivateWindow(Videos,&quot;$VAR[DirectoryNewDubbedTVShowsVar]&quot;,return)</onclick>
 				<thumb>icons/sc2/new_dub.png</thumb>
 			</item>
 			<item>  <!-- Recently added -->

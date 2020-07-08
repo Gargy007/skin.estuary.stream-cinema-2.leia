@@ -146,22 +146,11 @@
 		<value condition="Skin.HasSetting(show_profileavatar)">$LOCALIZE[31166]</value>
 		<value>$LOCALIZE[16018]</value>
 	</variable>
-	<variable name="LangDubMain">
-		<value condition="Skin.HasSetting(LangDubMainCS)">cs</value>
-		<value condition="Skin.HasSetting(LangDubMainEN)">en</value>
-		<value condition="Skin.HasSetting(LangDubMainSK)">sk</value>
-	</variable>
-	<variable name="LangDubBck">
-		<value condition="Skin.HasSetting(LangDubBckCS)">cs</value>
-		<value condition="Skin.HasSetting(LangDubBckEN)">en</value>
-		<value condition="Skin.HasSetting(LangDubBckSK)">sk</value>
-	</variable>
 	<variable name="DirectoryNewDubbedMoviesVar">
-		<value>plugin://plugin.video.stream-cinema-2-release/get_media/?media_type=movie&amp;render_type=default&amp;url=%2fapi%2fmedia%2ffilter%2fnewsDubbed%3flang%3d$VAR[LangDubMain]%26lang%3d$VAR[LangDubBck]%26sort%3ddateAdded%26type%3dmovie%26order%3ddesc%26days%3d365</value>
-
+		<value >$INFO[Window(Home).Property(SCC_new_dub_movies)]</value>
 	</variable>
 	<variable name="DirectoryNewDubbedTVShowsVar">
-		<value>plugin://plugin.video.stream-cinema-2-release/get_media/?media_type=tvshow&amp;render_type=default&amp;url=%2fapi%2fmedia%2ffilter%2fnewsDubbed%3flang%3d$VAR[LangDubMain]%26lang%3d$VAR[LangDubBck]%26sort%3ddateAdded%26type%3dmovie%26order%3ddesc%26days%3d365</value>
+		<value >$INFO[Window(Home).Property(SCC_new_dub_tvshows)]</value>
 	</variable>
 	<variable name="MoviesPopularVar">
 		<value condition="Skin.HasSetting(SCMoviesPopularWidgetwall)">$LOCALIZE[31379]</value>
