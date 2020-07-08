@@ -1723,32 +1723,12 @@
 						<selected>Skin.HasSetting(SCSearch)</selected>
 						<onclick>Skin.ToggleSetting(SCSearch)</onclick>
 					</control>
-					<control type="button" id="813">
-						<label>$LOCALIZE[31411]</label>
-						<include>DefaultSettingButton</include>
-						<onclick>Skin.SelectBool(31164, 31413|LangDubMainCS, 31414|LangDubMainSK, 31415|LangDubMainEN)</onclick>
-						<label2>$VAR[LangDubMain]</label2>
-					</control>
-					<control type="button" id="814">
-						<label>$LOCALIZE[31412]</label>
-						<include>DefaultSettingButton</include>
-						<onclick>Skin.SelectBool(31164, 31413|LangDubBckCS, 31414|LangDubBckSK, 31415|LangDubBckEN)</onclick>
-						<label2>$VAR[LangDubBck]</label2>
-					</control>
-					<control type="radiobutton" id="831"> <!-- Easy/SC+ -->
+					<control type="radiobutton" id="813"> <!-- Easy/SC+ -->
 						<label>$LOCALIZE[31410]</label>
 						<include>DefaultSettingButton</include>
 						<selected>Skin.HasSetting(SCSearchOnly)</selected>
 						<onclick>Skin.ToggleSetting(SCSearchOnly)</onclick>
 					</control>
-					<!--
-					<control type="radiobutton" id="813">
-						<label>Vyhledávání Kodi bez historie</label>
-						<include>DefaultSettingButton</include>
-						<onclick>Skin.ToggleSetting(SCSearchNoHistory)</onclick>
-						<selected>Skin.HasSetting(SCSearchNoHistory)</selected>
-					</control>
-					-->
 					<control type="image" id="825">
 						<height>3</height>
 						<texture>dialogs/separator-grey.png</texture>
