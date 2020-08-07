@@ -19,9 +19,11 @@
 				<content>
 					<item> <!-- Easy/SC+ -->
 						<label>$LOCALIZE[31202]</label>
-						<onclick>ReloadSkin()</onclick>
 						<!-- Load the language setting from the plugin -->
     					<onclick>XBMC.RunScript(special://skin/xml/get_lang.py)</onclick>
+    					<onclick>Skin.SetString(SCC_preferred_language, $INFO[Window(Home).Property(SCC_preferred_language)])</onclick>
+    					<onclick>Skin.SetString(SCC_fallback_language, $INFO[Window(Home).Property(SCC_fallback_language)])</onclick>
+						<onclick>ReloadSkin()</onclick>						
 					</item>
 					<item> <!-- Easy/SC+ -->
 						<label>$LOCALIZE[31201]</label>

@@ -146,11 +146,23 @@
 		<value condition="Skin.HasSetting(show_profileavatar)">$LOCALIZE[31166]</value>
 		<value>$LOCALIZE[16018]</value>
 	</variable>
+	<variable name="DirectoryNewDubbedVar">
+		<value condition="String.IsEqual(Skin.String(SCC_preferred_language), CS) + String.IsEqual(Skin.String(SCC_fallback_language), CS)" >DYQwdg5gvAxgzgMlJWi4HsBOAXKyIAiI2ApgIIAmFJFC2AngA4lQC26AbgJYkJbWYo1ODAQUQ9OFADMANgCsQA</value>
+		<value condition="String.IsEqual(Skin.String(SCC_preferred_language), CS) + String.IsEqual(Skin.String(SCC_fallback_language), SK)" >DYQwdg5gvAxgzgMlJKcDWC4HsBOAXKZCAERDwFMBBAE2vOoTwE8AHcqAWywDcBLchLjo4odODATUQTOFADMANgCsQA</value>
+		<value condition="String.IsEqual(Skin.String(SCC_preferred_language), CS) + String.IsEqual(Skin.String(SCC_fallback_language), EN)" >DYQwdg5gvAxgzgMlJKBTMC4HsBOAXKZCAERD1QEEATK1KhPATwAdUoBbLANwEtUFctHFFpwYCKiEZwoAZgBsAViA</value>
+		<value condition="String.IsEqual(Skin.String(SCC_preferred_language), SK) + String.IsEqual(Skin.String(SCC_fallback_language), CS)" >DYQwdg5gvAzg1gMlJKBjGCYHsBOAXKZCAERDwFMBBAE2vOoTwE8AHcqAWywDcBLchLjo4odGKgTUQTGFADMANgCsQA</value>
+		<value condition="String.IsEqual(Skin.String(SCC_preferred_language), SK) + String.IsEqual(Skin.String(SCC_fallback_language), SK)" >DYQwdg5gvAzg1gMlJWiYHsBOAXKyIAiI2ApgIIAmFJFC2AngA4lQC26AbgJYkJbWYo1GAGMEFEPRhQAzADYArEA</value>
+		<value condition="String.IsEqual(Skin.String(SCC_preferred_language), SK) + String.IsEqual(Skin.String(SCC_fallback_language), EN)" >DYQwdg5gvAzg1gMlJKBTMCYHsBOAXKZCAERD1QEEATK1KhPATwAdUoBbLANwEtUFctHFFowAxgiohGMKAGYAbAFYgA</value>
+		<value condition="String.IsEqual(Skin.String(SCC_preferred_language), EN) + String.IsEqual(Skin.String(SCC_fallback_language), CS)" >DYQwdg5gvApmBkpJQMYGd5oPYCcAuUSEAIiHjAIIAmVMV8eAngA4xQC2WAbgJYzy5aOKLTQp4VEIzRQAzADYArEA</value>
+		<value condition="String.IsEqual(Skin.String(SCC_preferred_language), EN) + String.IsEqual(Skin.String(SCC_fallback_language), SK)" >DYQwdg5gvApmBkpJQM4Gt4oPYCcAuUSEAIiHjAIIAmVMV8eAngA4xQC2WAbgJYzy5aOKLRQBjeFRCMUUAMwA2AKxA</value>
+		<value condition="String.IsEqual(Skin.String(SCC_preferred_language), EN) + String.IsEqual(Skin.String(SCC_fallback_language), EN)" >DYQwdg5gvApmBkpKwQZwPYCcAuUkQBERsYBBAE3JnPmwE8AHGKAW3QDcBLGeLKzKFVQBjeORB1UUAMwA2AKxA</value>
+		<value>None function link</value>
+	</variable>
 	<variable name="DirectoryNewDubbedMoviesVar">
-		<value >$INFO[Window(Home).Property(SCC_new_dub_movies)]</value>
+		<value >plugin://plugin.video.stream-cinema-2-release/get_media/?media_type=movie&amp;render_type=default&amp;url=%2fapi%2fmedia%2ffilter%2fnewsDubbed%3fquery%3d$VAR[DirectoryNewDubbedVar]</value>
 	</variable>
 	<variable name="DirectoryNewDubbedTVShowsVar">
-		<value >$INFO[Window(Home).Property(SCC_new_dub_tvshows)]</value>
+		<value >plugin://plugin.video.stream-cinema-2-release/get_media/?media_type=tvshow&amp;render_type=default&amp;url=%2fapi%2fmedia%2ffilter%2fnewsDubbed%3fquery%3d$VAR[DirectoryNewDubbedVar]</value>
 	</variable>
 	<variable name="MoviesPopularVar">
 		<value condition="Skin.HasSetting(SCMoviesPopularWidgetwall)">$LOCALIZE[31379]</value>

@@ -60,6 +60,8 @@
 
     <!-- Load the language setting from the plugin -->
     <onload>XBMC.RunScript(special://skin/xml/get_lang.py)</onload>
+    <onload>Skin.SetString(SCC_preferred_language, $INFO[Window(Home).Property(SCC_preferred_language)])</onload>
+    <onload>Skin.SetString(SCC_fallback_language, $INFO[Window(Home).Property(SCC_fallback_language)])</onload>
 </window>
 
 
